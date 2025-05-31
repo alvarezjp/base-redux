@@ -4,6 +4,8 @@ import { reset, restar, restar5, sumar, sumar5 } from "../actions/contadorAction
 const Contador = () => {
     //acceder al estado
     const state = useSelector((state)=> state.contador)
+    console.log(state);
+    
 
     //Despachar acciones
     
@@ -13,6 +15,7 @@ const Contador = () => {
   return (
     <div>
       <h2>Contador con Redux</h2>
+      <h3>Con reducers</h3>
       <p>{state.contador}</p>
       <nav>
         <button onClick={()=>{dispatch(sumar5())}}>+5</button>

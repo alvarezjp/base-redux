@@ -29,3 +29,4 @@ export const counterSlice = createSlice({
 })
 
 export const {increment,increment5,decrement,decrement5,reset} = counterSlice.actions
+export default counterSlice
